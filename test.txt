@@ -16,13 +16,13 @@ isWeekDay {
 
 test_isWeekDay_True {
 	for i in range (0,5) {
-		# testing for indeces 0 - 4 inc.
+		# testing for indices 0 - 4 inc.
 		assert isWeekDay(i) returns True
 	}
 		
 test_isWeekDay_False {
 	for i in range (6,8) {
-		# testing for indeces 6 and 7
+		# testing for indices 6 and 7
 		assert isWeekDay(i) returns False
 	}
 		
