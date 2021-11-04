@@ -15,13 +15,15 @@ isWeekDay {
 //pseudo test!
 
 test_isWeekDay_True {
-	for i < 0 - 4 < ++
-	assert isWeekDay(i) returns True
+	for i in range (0,5) {
+		# testing for indeces 0 - 4 inc.
+		assert isWeekDay(i) returns True
 	}
 		
 test_isWeekDay_False {
-	for i < 5 - 6 < ++
-	assert isWeekDay(i) returns False
+	for i in range (6,8) {
+		# testing for indeces 6 and 7
+		assert isWeekDay(i) returns False
 	}
 		
 
