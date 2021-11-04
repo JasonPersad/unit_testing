@@ -1,1 +1,29 @@
-//unit tetsing exampl scenario
+//unit testing example scenario
+
+
+//pseudo code!
+
+isWeekDay {
+	get dayOfWeekIndex;
+	if DayOfWeekIndex ~= [0-4] {	
+		return True;
+	}
+	return False;
+
+
+
+//pseudo test!
+
+test_isWeekDay_True {
+	for i < 0 - 4 < ++
+	assert isWeekDay(i) returns True
+	}
+		
+test_isWeekDay_False {
+	for i < 5 - 6 < ++
+	assert isWeekDay(i) returns False
+	}
+		
+
+
+
