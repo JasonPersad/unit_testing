@@ -37,3 +37,30 @@ test_get_account_details_invalid {
 		assert correct return code fail ( , )
 
 
+
+////////////////////////////////////////////////////////////////////////////////////////////
+//system test
+
+CREATE a new account
+	verify that this action returns success
+
+READ all account details ordered by create datetime, order descending 
+	verify that the details from account created are lastest record returned
+
+UPDATE this last account to contain new details
+	verify that this action returns success
+
+READ this account's details  
+	verify that the details from update made above are present
+
+DELETE this account
+	verify that the action returns success
+
+READ all account details ordered by create datetime, order descending 
+	verify that the new account created is no longer in existance
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
