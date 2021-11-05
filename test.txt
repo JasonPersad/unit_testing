@@ -61,6 +61,11 @@ READ all account details ordered by create datetime, order descending
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////
+// UAT / BDD example
 
+SCENARIO a transaction is requested which would result in a savings account being overdrawn
 
+Given that a user has a savings account
+When they attempt to withdraw an amount which is more than their balance
+Then the transaction is rejected
 
