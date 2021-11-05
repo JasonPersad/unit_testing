@@ -1,6 +1,5 @@
 //unit testing example scenario
 
-
 //pseudo code!
 
 isWeekDay {
@@ -9,7 +8,6 @@ isWeekDay {
 		return True;
 	}
 	return False;
-
 
 
 //pseudo test!
@@ -26,6 +24,16 @@ test_isWeekDay_False {
 		assert isWeekDay(i) returns False
 	}
 		
+////////////////////////////////////////////////////////////////////////////////////////////
+//integration testing example scenario (testing components in pairs)
 
+// test UI to logic
+test_get_account_details_valid {
+	send GET request to READ account details for valid account
+		assert correct return code for success (200, OK)
+
+test_get_account_details_invalid {
+	send GET request to READ account details for invalid account
+		assert correct return code fail ( , )
 
 
